@@ -37,11 +37,11 @@
 
         symbols {
             bindings = <
-&kp EQUAL  &kp F1                &kp F2                 &kp F3           &kp F4             &kp F5            &trans                                      &mo 2   &kp F6       &kp F7          &kp F8         &kp F9            &kp F10       &kp BACKSPACE
-&kp TAB    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp PLUS           &kp STAR          &none                                       &none   &kp AT_SIGN  &kp TILDE       &kp AMPERSAND  &kp CARET         &kp PERCENT   &kp PIPE
-&kp ESC    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp MINUS          &kp UNDERSCORE    &none   &trans  &trans      &trans  &trans  &none   &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT         &kp COLON     &kp ENTER
-&kp LSHFT  &kp LEFT_BRACE        &kp RBRC               &kp DOLLAR       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                  &trans      &trans                  &kp PERCENT  &kp POUND       &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp RSHFT
-&mo 0      &kp LESS_THAN         &kp GREATER_THAN       &kp TILDE        &kp GRAVE                            &trans  &trans  &trans      &trans  &trans  &trans               &kp UP          &kp DOWN       &kp KP_DOT        &kp RBKT      &kp LEFT_META
+&kp EQUAL  &kp F1                           &kp F2                              &kp F3              &kp F4               &kp F5            &trans                                      &mo 2   &kp F6       &kp F7          &kp F8         &kp F9            &kp F10               &kp BACKSPACE
+&kp TAB    &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                   &kp EXCLAMATION     &kp PLUS             &kp STAR          &none                                       &none   &kp AT_SIGN  &kp TILDE       &kp AMPERSAND  &kp CARET         &kp PERCENT           &kp PIPE
+&kp ESC    &hm LEFT_SHIFT LEFT_PARENTHESIS  &hm LEFT_CONTROL RIGHT_PARENTHESIS  &hm LEFT_ALT EQUAL  &hm LEFT_META MINUS  &kp UNDERSCORE    &none   &trans  &trans      &trans  &trans  &none   &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT         &hm LEFT_SHIFT COLON  &kp ENTER
+&kp LSHFT  &kp LEFT_BRACE                   &kp RBRC                            &kp DOLLAR          &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE                  &trans      &trans                  &kp PERCENT  &kp POUND       &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION          &kp RSHFT
+&mo 0      &kp LESS_THAN                    &kp GREATER_THAN                    &kp TILDE           &kp GRAVE                              &trans  &trans  &trans      &trans  &trans  &trans               &kp UP          &kp DOWN       &kp KP_DOT        &kp RBKT              &kp LEFT_META
             >;
         };
 
