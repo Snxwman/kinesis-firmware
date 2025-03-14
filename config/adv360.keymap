@@ -66,9 +66,10 @@
         compatible = "zmk,combos";
 
         tilde {
-            bindings = <&kp TILDE>;
+            bindings = <&kp GRAVE>;
             key-positions = <32 31>;
             layers = <1>;
+            timeout-ms = <100>;
         };
     };
 
@@ -91,17 +92,17 @@
 &kp TAB       &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                   &kp PLUS            &kp ASTERISK                 &kp AMPS          &trans                                                  &trans   &kp AT_SIGN  &kp POUND       &kp DOLLAR     &kp BACKSLASH     &kp CARET             &kp PIPE
 &kp ESC       &hm LEFT_SHIFT LEFT_PARENTHESIS  &hm LEFT_CONTROL RIGHT_PARENTHESIS  &hm LEFT_ALT EQUAL  &hm LEFT_META DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans   &trans  &trans      &trans             &trans  &trans   &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT         &hm LEFT_SHIFT COLON  &kp ENTER
 &none         &kp LEFT_BRACE                   &kp RBRC                            &kp MINUS           &kp UNDERSCORE               &kp PIPE                           &trans      &kp C_RANDOM_PLAY                   &kp TILDE    &kp EXCL        &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION          &kp RSHFT
-&trans        &kp HOME                         &kp PAGE_DOWN                       &kp PAGE_UP         &kp END                                        &trans   &trans  &trans      &trans             &trans  &trans                &kp PERCENT     &none          &none             &kp KP_SLASH          &kp LEFT_META
+&trans        &kp HOME                         &kp PAGE_DOWN                       &kp PAGE_UP         &kp END                                        &trans   &trans  &trans      &trans             &trans  &trans                &kp PERCENT     &kp GRAVE      &none             &kp KP_SLASH          &kp LEFT_META
             >;
         };
 
         numbers {
             bindings = <
-&none  &kp F11  &kp F12  &kp F13    &kp F14  &kp F15  &none                                       &none   &kp F16  &kp F17  &kp F18    &kp F19     &kp F20  &none
-&none  &kp F21  &kp F22  &kp F23    &kp F24  &none    &none                                       &none   &none    &none    &none      &none       &none    &none
-&none  &kp N1   &kp N2   &kp N3     &kp N4   &kp N5   &none   &trans  &trans      &trans  &trans  &none   &kp N6   &kp N7   &kp N8     &kp N9      &kp N0   &none
-&none  &none    &none    &kp MINUS  &none    &none                    &trans      &trans                  &none    &none    &kp COMMA  &kp PERIOD  &none    &none
-&none  &none    &none    &none      &none             &trans  &trans  &trans      &trans  &trans  &trans           &none    &none      &none       &none    &tog 4
+&trans  &kp F11  &kp F12  &kp F13    &kp F14  &kp F15  &none                                       &none   &kp F16  &kp F17  &kp F18    &kp F19     &kp F20  &trans
+&trans  &kp F21  &kp F22  &kp F23    &kp F24  &none    &none                                       &none   &none    &none    &none      &none       &none    &trans
+&trans  &kp N1   &kp N2   &kp N3     &kp N4   &kp N5   &none   &trans  &trans      &trans  &trans  &none   &kp N6   &kp N7   &kp N8     &kp N9      &kp N0   &trans
+&none   &none    &none    &kp MINUS  &none    &none                    &trans      &trans                  &none    &none    &kp COMMA  &kp PERIOD  &none    &trans
+&none   &none    &none    &none      &none             &trans  &trans  &trans      &trans  &trans  &trans           &none    &none      &none       &none    &tog 4
             >;
         };
 
@@ -122,6 +123,16 @@
 &kp TAB    &kp A      &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp RET
 &trans     &kp Z      &kp X   &kp C   &kp V   &trans                  &trans      &trans                  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &trans
 &trans     &kp LSHFT  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &trans
+            >;
+        };
+
+        keypad {
+            bindings = <
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &none                                       &none   &none         &kp KP_NUMLOCK   &kp KP_SLASH     &kp KP_MULTIPLY  &kp BACKSPACE  &trans
+&trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &none                                       &none   &kp KP_LPAR   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &trans
+&trans  &kp F21  &kp F22  &kp F23  &kp F24  &none    &none   &trans  &trans      &trans  &trans  &none   &kp KP_RPAR   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &trans
+&none   &none    &none    &none    &none    &none                    &trans      &trans                  &kp KP_COMMA  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER   &trans
+&none   &none    &none    &none    &none             &trans  &trans  &trans      &trans  &trans  &trans                &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT       &kp KP_ENTER   &tog 4
             >;
         };
     };
